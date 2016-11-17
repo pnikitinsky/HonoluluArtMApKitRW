@@ -13,6 +13,10 @@
 		389C63331DDDE11000B11128 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 389C63321DDDE11000B11128 /* Assets.xcassets */; };
 		389C63361DDDE11000B11128 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 389C63341DDDE11000B11128 /* LaunchScreen.storyboard */; };
 		389C63411DDDE11000B11128 /* HonoluluArtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C63401DDDE11000B11128 /* HonoluluArtTests.swift */; };
+		389C634D1DDE01F500B11128 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C634B1DDE01F500B11128 /* JSON.swift */; };
+		389C634E1DDE01F500B11128 /* PublicArt.json in Resources */ = {isa = PBXBuildFile; fileRef = 389C634C1DDE01F500B11128 /* PublicArt.json */; };
+		389C63511DDE026A00B11128 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C63501DDE026A00B11128 /* Artwork.swift */; };
+		389C63531DDE150C00B11128 /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389C63521DDE150C00B11128 /* VCMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		389C633C1DDDE11000B11128 /* HonoluluArtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HonoluluArtTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		389C63401DDDE11000B11128 /* HonoluluArtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HonoluluArtTests.swift; sourceTree = "<group>"; };
 		389C63421DDDE11000B11128 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		389C634B1DDE01F500B11128 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = HonoluluArt/JSON.swift; sourceTree = "<group>"; };
+		389C634C1DDE01F500B11128 /* PublicArt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PublicArt.json; path = HonoluluArt/PublicArt.json; sourceTree = "<group>"; };
+		389C63501DDE026A00B11128 /* Artwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
+		389C63521DDE150C00B11128 /* VCMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +85,15 @@
 		389C632A1DDDE11000B11128 /* HonoluluArt */ = {
 			isa = PBXGroup;
 			children = (
+				389C634F1DDE021900B11128 /* SupportingFiles */,
 				389C632B1DDDE11000B11128 /* AppDelegate.swift */,
 				389C632D1DDDE11000B11128 /* ViewController.swift */,
+				389C63521DDE150C00B11128 /* VCMapView.swift */,
 				389C632F1DDDE11000B11128 /* Main.storyboard */,
 				389C63321DDDE11000B11128 /* Assets.xcassets */,
 				389C63341DDDE11000B11128 /* LaunchScreen.storyboard */,
 				389C63371DDDE11000B11128 /* Info.plist */,
+				389C63501DDE026A00B11128 /* Artwork.swift */,
 			);
 			path = HonoluluArt;
 			sourceTree = "<group>";
@@ -94,6 +105,16 @@
 				389C63421DDDE11000B11128 /* Info.plist */,
 			);
 			path = HonoluluArtTests;
+			sourceTree = "<group>";
+		};
+		389C634F1DDE021900B11128 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				389C634C1DDE01F500B11128 /* PublicArt.json */,
+				389C634B1DDE01F500B11128 /* JSON.swift */,
+			);
+			name = SupportingFiles;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				389C634E1DDE01F500B11128 /* PublicArt.json in Resources */,
 				389C63361DDDE11000B11128 /* LaunchScreen.storyboard in Resources */,
 				389C63331DDDE11000B11128 /* Assets.xcassets in Resources */,
 				389C63311DDDE11000B11128 /* Main.storyboard in Resources */,
@@ -201,7 +223,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				389C634D1DDE01F500B11128 /* JSON.swift in Sources */,
 				389C632E1DDDE11000B11128 /* ViewController.swift in Sources */,
+				389C63531DDE150C00B11128 /* VCMapView.swift in Sources */,
+				389C63511DDE026A00B11128 /* Artwork.swift in Sources */,
 				389C632C1DDDE11000B11128 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
